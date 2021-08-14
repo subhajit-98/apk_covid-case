@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllCountryData">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tl_show_all_statics"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="*">
+            <TableRow
+                android:padding="0dp"
+                android:layout_margin="0dp">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Country"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Active"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="#E3CC08"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Dead"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="#EC2011"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Recovary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="#0FB616"/>
+            </TableRow>
+            <!--<AdapterViewFlipper
+                android:id="@+id/show_content_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>-->
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

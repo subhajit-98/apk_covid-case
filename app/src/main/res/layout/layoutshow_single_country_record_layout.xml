@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/single_country_card_layout"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="6dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/iv_country_flag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv_show_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Country Name"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Active Case: "
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_active_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Death Case: "
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_dead_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Recovary Case: "
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_recovary_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#0B84E4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Active"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Death"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Recovary"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_total_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Active"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_death_case"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Active"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"/>
+        <TextView
+            android:id="@+id/tv_total_recovary_case"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Active"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#03A9F4"/>
+    </LinearLayout>
+
+</LinearLayout>
